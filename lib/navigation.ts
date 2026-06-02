@@ -8,7 +8,7 @@ export type NavTab = {
 
 export const NAV_TABS: NavTab[] = [
   { id: "inicio", label: "Inicio", href: "/" },
-  { id: "glucosa", label: "Glucosa", href: "/glucosa" },
+  { id: "glucosa", label: "Registros", href: "/glucosa" },
   { id: "aprende", label: "Aprende", href: "/aprende" },
   { id: "retos", label: "Retos", href: "/retos" },
 ];

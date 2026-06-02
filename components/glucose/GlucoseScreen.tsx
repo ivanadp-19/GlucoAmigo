@@ -53,9 +53,9 @@ export function GlucoseScreen() {
   return (
     <div className="space-y-5 pb-2 pt-2">
       <header className="space-y-1">
-        <h1 className="text-2xl font-extrabold text-text">Glucosa</h1>
+        <h1 className="text-2xl font-extrabold text-text">Registros</h1>
         <p className="text-sm text-muted">
-          Registra y revisa tus niveles de glucosa.
+          Registra y revisa tus niveles de glucosa y emociones.
         </p>
       </header>
 

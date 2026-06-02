@@ -992,6 +992,16 @@ export function getGlucoseStatus(
     return { label: "Fuera de objetivo", color: "danger" };
   }
 
+  if (moment === "En ayunas") {
+    if (
+      value >= GLUCOSE_GOALS.fasting.min &&
+      value <= GLUCOSE_GOALS.fasting.max
+    ) {
+      return { label: "Dentro de objetivo", color: "success" };
+    }
+    return { label: "Fuera de objetivo", color: "danger" };
+  }
+
   const isPostprandial = moment === "2 h después de comer";
 
   if (isPostprandial) {
