@@ -15,7 +15,6 @@ import { MotivationalCard } from "@/components/home/MotivationalCard";
 import { GoalCard } from "@/components/home/GoalCard";
 import { ProgressRing } from "@/components/home/ProgressRing";
 import { Disclaimer } from "@/components/ui/Disclaimer";
-import { References } from "@/components/ui/References";
 
 const STATUS_STYLES = {
   success: {
@@ -198,7 +197,6 @@ export function HomeScreen() {
       </section>
 
       <Disclaimer />
-      <References />
     </div>
   );
 }

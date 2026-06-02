@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BottomNav } from "@/components/layout/BottomNav";
 
 type MobileShellProps = {
@@ -11,6 +12,14 @@ export function MobileShell({ children }: MobileShellProps) {
         <main className="shell-scroll min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 pb-3 pt-[max(0.75rem,env(safe-area-inset-top))]">
           {children}
         </main>
+        <div className="shrink-0 bg-background px-4 py-1 text-center">
+          <Link
+            href="/reference"
+            className="text-[10px] text-muted/60 underline-offset-2 hover:text-muted hover:underline"
+          >
+            Referencia
+          </Link>
+        </div>
         <BottomNav />
       </div>
     </div>
