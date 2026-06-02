@@ -61,9 +61,17 @@ export function HomeScreen() {
               </p>
             </div>
           </div>
-          <span className="shrink-0 rounded-full bg-secondary-soft px-2.5 py-1 text-[10px] font-bold text-secondary">
-            DM {USER.diabetesType.replace("Tipo ", "T")}
-          </span>
+          <div className="flex shrink-0 items-center gap-1.5">
+            <Link
+              href="/reference"
+              className="text-[10px] text-muted/60 underline-offset-2 hover:text-muted hover:underline"
+            >
+              Referencia
+            </Link>
+            <span className="rounded-full bg-secondary-soft px-2.5 py-1 text-[10px] font-bold text-secondary">
+              DM {USER.diabetesType.replace("Tipo ", "T")}
+            </span>
+          </div>
         </div>
         <div>
           <h1 className="text-2xl font-extrabold tracking-tight text-text">
